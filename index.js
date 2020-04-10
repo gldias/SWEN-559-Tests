@@ -14,7 +14,7 @@ try{
   var assignee = process.env['GITHUB_ACTOR'];
   var sha = process.env['GITHUB_SHA'];
   octokit.issues.create({
-    owner: 'mesternefeld',
+    owner: 'gldias',
     repo: 'SWEN-559-Tests',
     title: `${assignee} broke branch ${branch}`,
     body: `Branch ${branch} failed at commit ${sha} with error: \n${codeblock}\n${err}\n${codeblock}`,
